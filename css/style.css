@@ -1,8 +1,14 @@
 body {
     font-family: Lato;
     background-color: #e5e9f0;
+    --dusk: #484764;
+    --blue-grey: #8685a8;
+    --clear-blue: #2290ff;
 }
-h1,h2,h3,h4,h5,h6 {color: #484764;}
+h1,h2,h3,h4,h5,h6 {color: var(--dusk);}
+a {font-size: .875rem;}
+p {font-size: .875rem; color: var(--blue-grey);}
+hr {border: 1px solid #f0f1f3;}
 h1 {font-size: 1rem; font-weight: 700;}
 main .container-fluid {max-width: 95vw;}
 .box {
@@ -11,6 +17,10 @@ main .container-fluid {max-width: 95vw;}
     margin-bottom: 1.5rem;
     padding: 1rem;
 }
-table {margin: 1rem 0px; width: 100%;}
-td {line-height: 1.875rem;}
-.personal td:nth-child(even), .history td:nth-child(even) {text-align: right;}
+th{padding-left: 0rem !important;}
+td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
+.table-striped th {font-size: .875rem; color: var(--blue-grey);font-weight: 600;}
+.table-striped td {font-size: .875rem; color: var(--dusk); width: 20%;}
+#personal td:nth-child(odd), #history td:nth-child(odd) {text-align: left; color: var(--blue-grey); font-size: 0.875rem;}
+a.show{color: var(--clear-blue) !important;display: flex; justify-content: center;}
+#personal td:nth-child(even), #history td:nth-child(even) {text-align: right; color: var(--dusk); font-size: 0.875rem;}
