@@ -24,3 +24,8 @@ td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 #personal td:nth-child(odd), #history td:nth-child(odd) {text-align: left; color: var(--blue-grey); font-size: 0.875rem;}
 a.show{color: var(--clear-blue) !important;display: flex; justify-content: center;}
 #personal td:nth-child(even), #history td:nth-child(even) {text-align: right; color: var(--dusk); font-size: 0.875rem;}
+
+@media screen and (max-width:767px){
+    .table-striped td {padding-right: .75rem !important;}
+    .table-responsive {display: block !important;}
+}
