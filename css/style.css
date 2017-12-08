@@ -1,14 +1,16 @@
-body {
-    font-family: Lato;
-    background-color: #e5e9f0;
+:root {
     --dusk: #484764;
     --blue-grey: #8685a8;
     --clear-blue: #2290ff;
     --warm-pink: #f73e81;
     --light-pink: #fdd7e8;
-    --hover: #6571bd;
-    
-    
+    --dark: #2f2e45;
+    --lavender-blue: #7e8ff2;
+    --tiffany-blue: #5eebee;
+}
+body {
+    font-family: Lato;
+    background-color: #e5e9f0; 
 }
 h1,h2,h3,h4,h5,h6 {color: var(--dusk);}
 a {font-size: .875rem;}
@@ -16,27 +18,39 @@ p {font-size: .875rem; color: var(--blue-grey);}
 hr {border: 1px solid #f0f1f3;}
 h1 {font-size: 1rem; font-weight: 700;}
 li {list-style: none;}
+/* buttons */
+.btn {background-color: var(--lavender-blue); font-size: .9375rem !important; color: #fff !important; border-radius: 0px !important;}
+.btn-lg {padding: .5rem 1.3rem !important; border: 2px solid transparent;}
 /* Header */
 .navbar {background-color: #fff; margin-bottom: 1.5rem;}
 .navbar-center,.navbar-right {margin-bottom: 0 !important;}
 .navbar form {height: 100%;}
 .navbar .input-field {margin: 0; height: 100%; position: relative;}
 .navbar .dropdown:first-of-type {margin-right: 1rem;}
-.navbar .dropdown-menu {right: 0; left: auto !important;}
+.navbar .dropdown-menu {right: 0; left: auto !important; background-color: var(--dark); padding: 0rem !important;}
+.navbar .dropdown-menu.status p {font-size: 1rem; margin-bottom: .5rem; padding: .5rem 1.5rem; color: #fff;}
+.navbar .dropdown-menu a {color: var(--tiffany-blue);}
+.navbar .dropdown-item {color: #fff !important; font-size: .875rem;}
+.navbar .dropdown-item:hover {background-color: var(--dusk);}
+.navbar .dropdown-item span {margin-left: 1rem; color: var(--blue-grey);}
 .dropdown-toggle::after {display:none;}
+.navbar .icon-bell {color: var(--blue-grey);}
 .badge:empty {display: block;}
 .badge {position: absolute; top: 5px; border-color: 100%; right: 0; padding: .3em .4em !important; border-radius: 50%;}
 .navbar .badge {background-color: #ff86b7;}
 .navbar-right .img-fluid {height: 50px; width: 50px;}
 .dropdown-toggle.profile {display: flex;}
 .dropdown-toggle.profile ul {padding-left: .5rem; margin: 0 !important;}
+.dropdown-menu .btn-group-lg {padding: 1rem 0rem 0rem;}
+.dropdown-menu .btn-group-lg .btn-lg {background-color: var(--dusk);}
+.dropdown-menu .btn-group-lg .btn-lg:hover {background-color: var(--lavender-blue);}
 .profile ul li:first-of-type {color: var(--dusk);}
 .profile ul li {color: var(--blue-grey);}
 .profile img {border-radius: 50%;}
 /* Main */
 main .profile {padding: 1rem; display: flex; align-content: center;}
 .profile-img {height: 100px; width: 100px; position: relative;}
-.profile-img .badge {background-color: var(--hover); padding: .4em .5em !important;}
+.profile-img .badge {background-color: var(--lavender-blue); padding: .4em .5em !important;}
 .profile-img .badge i {color:#fff; font-size: 80%;}
 .profile ul {margin: 1rem 0rem; padding-left: 1rem; font-weight: 700;}
 .profile .blue {margin-left: 3rem; font-size: .875rem !important; font-weight: 400 !important;}
@@ -48,7 +62,7 @@ main .profile {padding: 1rem; display: flex; align-content: center;}
     max-height: 0;
     left: -1rem;
     top: -5px;
-    color: #5be7f0;
+    color: var(--tiffany-blue);
     font-size: 20px;
 }
 main .container-fluid {max-width: 95vw;}
@@ -63,7 +77,8 @@ main .container-fluid {max-width: 95vw;}
 .row.box .col-lg-12 {padding: 1rem 0rem;}
 .row.box .col-lg-12:hover {background-color: #7E8FF2;}
 .row.box .col-lg-12:hover i {color: #FFFFFF;}
-i {color: var(--blue-grey); font-size: 1rem;}
+.col-lg-1 i {color: var(--blue-grey);}
+i {color: #fff; font-size: 1rem;}
 th{padding-left: 0rem !important;}
 td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 .table-striped th {font-size: .875rem; color: var(--blue-grey);font-weight: 600;}
@@ -71,8 +86,11 @@ td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 #personal td:nth-child(odd), #history td:nth-child(odd) {text-align: left; color: var(--blue-grey); font-size: 0.875rem;}
 a.show{color: var(--clear-blue) !important;display: flex; justify-content: center;}
 #personal td:nth-child(even), #history td:nth-child(even) {text-align: right; color: var(--dusk); font-size: 0.875rem;}
-.icon-location-pin {color: #5BE7F0;}
-
+.icon-location-pin {color: var(--tiffany-blue);}
+/* media queries */
+@media screen and (max-width:440px) {
+    .profile ul {font-size: .875rem; margin-left: 0rem !important;}
+}
 @media screen and (max-width:767px){
     .table-striped td {padding-right: .75rem !important;}
     .table-responsive {display: block !important;}
