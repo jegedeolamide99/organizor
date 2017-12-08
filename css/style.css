@@ -16,7 +16,13 @@ main .container-fluid {max-width: 95vw;}
     box-shadow: 0px 1px 3px 0px rgba(72,71,103,0.2);
     margin-bottom: 1.5rem;
     padding: 1rem;
+    border-radius: 4px;
 }
+.row.box {padding:0rem;}
+.row.box .col-lg-12 {padding: 1rem 0rem;}
+.row.box .col-lg-12:hover {background-color: #7E8FF2;}
+.row.box .col-lg-12:hover i {color: #FFFFFF;}
+i {color: var(--blue-grey); font-size: 1rem;}
 th{padding-left: 0rem !important;}
 td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 .table-striped th {font-size: .875rem; color: var(--blue-grey);font-weight: 600;}
@@ -24,6 +30,7 @@ td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 #personal td:nth-child(odd), #history td:nth-child(odd) {text-align: left; color: var(--blue-grey); font-size: 0.875rem;}
 a.show{color: var(--clear-blue) !important;display: flex; justify-content: center;}
 #personal td:nth-child(even), #history td:nth-child(even) {text-align: right; color: var(--dusk); font-size: 0.875rem;}
+.icon-location-pin {color: #5BE7F0;}
 
 @media screen and (max-width:767px){
     .table-striped td {padding-right: .75rem !important;}
