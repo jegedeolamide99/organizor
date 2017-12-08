@@ -19,7 +19,36 @@
             <div class="container">
                 <a class="navbar-brand" href="#">organizor</a>
                 <div class="navbar navbar-center">
-                    
+                    <form>
+                        <div class="input-field">
+                            <input id="search" required="" type="search" placeholder="What are you looking for?">
+                            <label class="label-icon" for="search">
+                                <i class="icon-magnifier"></i>
+                            </label>
+                            <i class="icon-close"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar navbar-right">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-bell"></i>
+                            <span class="badge"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Olamide responded to your email</a></li>
+                            <li><a href="#">Arinze scheduled an appointment</a></li>
+                        </ul>                    
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle profile" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <img class="img-fluid" src="images/olamide.jpg">
+                            <ul>
+                                <li>Alice Wonderberg</li>
+                                <li>Agency Administrator</li>
+                            </ul>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -43,6 +72,19 @@
                 </div>
                 <div class="col-lg-11">
                     <div class="row">
+                        <div class="col-lg-12">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img class="img-fluid" src="images/olamide.jpg">
+                                    <span class="badge"><i class="icon-pencil"></i></span>
+                                </div>
+                                <ul>
+                                    <li>Alice Wonderberg</li>
+                                    <li>Agency Administrator</li>
+                                </ul>
+                                <ul class="blue"><li></li>Active</ul>
+                            </div>
+                        </div>
                         <div class="col-lg-8">
                             <div class="col-lg-12 box">
                                 <div class="row">
@@ -173,7 +215,7 @@
     
     <!-- Scripts -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
