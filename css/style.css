@@ -21,8 +21,10 @@ li {list-style: none;}
 /* buttons */
 .btn {background-color: var(--lavender-blue); font-size: .9375rem !important; color: #fff !important; border-radius: 0px !important;}
 .btn-lg {padding: .5rem 1.3rem !important; border: 2px solid transparent;}
+.btn i {color: #fff !important;}
 /* Header */
 .navbar {background-color: #fff; margin-bottom: 1.5rem;}
+.navbar-brand {font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--dusk);}
 .navbar-center,.navbar-right {margin-bottom: 0 !important;}
 .navbar form {height: 100%;}
 .navbar .input-field {margin: 0; height: 100%; position: relative;}
@@ -34,7 +36,6 @@ li {list-style: none;}
 .navbar .dropdown-item:hover {background-color: var(--dusk);}
 .navbar .dropdown-item span {margin-left: 1rem; color: var(--blue-grey);}
 .dropdown-toggle::after {display:none;}
-.navbar .icon-bell {color: var(--blue-grey);}
 .badge:empty {display: block;}
 .badge {position: absolute; top: 5px; border-color: 100%; right: 0; padding: .3em .4em !important; border-radius: 50%;}
 .navbar .badge {background-color: #ff86b7;}
@@ -77,8 +78,7 @@ main .container-fluid {max-width: 95vw;}
 .row.box .col-lg-12 {padding: 1rem 0rem;}
 .row.box .col-lg-12:hover {background-color: #7E8FF2;}
 .row.box .col-lg-12:hover i {color: #FFFFFF;}
-.col-lg-1 i {color: var(--blue-grey);}
-i {color: #fff; font-size: 1rem;}
+i {color: var(--blue-grey); font-size: 1rem;}
 th{padding-left: 0rem !important;}
 td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 .table-striped th {font-size: .875rem; color: var(--blue-grey);font-weight: 600;}
