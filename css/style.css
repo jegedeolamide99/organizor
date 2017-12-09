@@ -126,6 +126,7 @@ i {color: var(--blue-grey,#8685a8); font-size: 1rem;}
 th{padding-left: 0rem !important;}
 td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
 .table-striped th {font-size: .875rem; color: var(--blue-grey,#8685a8);font-weight: 600;}
+.table-striped tbody tr:nth-child(odd) {background-color: #f6f9fe !important;}
 .table-striped td {font-size: .875rem; color: var(--dusk,#484764); width: 20%;}
 #personal td:nth-child(odd), #history td:nth-child(odd) {text-align: left; color: var(--blue-grey,#8685a8); font-size: 0.875rem;}
 a.show{color: var(--clear-blue,#2290ff) !important;display: flex; justify-content: center;}
