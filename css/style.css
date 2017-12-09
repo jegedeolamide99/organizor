@@ -18,6 +18,7 @@ p {font-size: .875rem; color: var(--blue-grey);}
 hr {border: 1px solid #f0f1f3;}
 h1 {font-size: 1rem; font-weight: 700;}
 li {list-style: none;}
+input {color: var(--blue-grey);}
 /* buttons */
 .btn {background-color: var(--lavender-blue); font-size: .9375rem !important; color: #fff !important; border-radius: 0px !important;}
 .btn-lg {padding: .5rem 1.3rem !important; border: 2px solid transparent;}
@@ -25,9 +26,51 @@ li {list-style: none;}
 /* Header */
 .navbar {background-color: #fff; margin-bottom: 1.5rem;}
 .navbar-brand {font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--dusk);}
+.navbar-collapse {justify-content: space-between;}
+.navbar-center {width: 40%;}
 .navbar-center,.navbar-right {margin-bottom: 0 !important;}
-.navbar form {height: 100%;}
+.navbar form {height: 100%; width: 100%;}
 .navbar .input-field {margin: 0; height: 100%; position: relative;}
+.navbar .input-field input[type=search] {
+    height: inherit;
+    padding-left: 4rem;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+}
+.input-field input[type="search"] {
+    display: block;
+    line-height: inherit;
+}
+.input-field input[type="search"] + label {
+    left: 1rem;
+}
+nav .input-field label {
+    top: -.5rem;
+    left: 0;
+}
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: text;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    pointer-events: none;
+}
+.navbar .input-field label i {
+    font-size: 1.5rem;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
 .navbar .dropdown:first-of-type {margin-right: 1rem;}
 .navbar .dropdown-menu {right: 0; left: auto !important; background-color: var(--dark); padding: 0rem !important;}
 .navbar .dropdown-menu.status p {font-size: 1rem; margin-bottom: .5rem; padding: .5rem 1.5rem; color: #fff;}
@@ -92,6 +135,8 @@ a.show{color: var(--clear-blue) !important;display: flex; justify-content: cente
     .profile ul {font-size: .875rem; margin-left: 0rem !important;}
 }
 @media screen and (max-width:767px){
+    .navbar-center {width: 100%;}
+    .navbar .navbar-right .dropdown-menu.notification {right: auto; left: 0;}
     .table-striped td {padding-right: .75rem !important;}
     .table-responsive {display: block !important;}
 }
