@@ -137,7 +137,7 @@ a.show{color: var(--clear-blue,#2290ff) !important;display: flex; justify-conten
     .profile ul {font-size: .875rem; margin-left: 0rem !important;}
 }
 @media screen and (max-width:767px) {
-    .navbar-center {width: 100%;}
+    .navbar-center {width: 100% !important;}
     .navbar .navbar-right .dropdown-menu.notification {right: auto; left: 0;}
     .table-striped td {padding-right: .75rem !important;}
     .table-responsive {display: block !important;}
