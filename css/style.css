@@ -25,9 +25,9 @@ input {color: var(--blue-grey);}
 .btn i {color: #fff !important;}
 /* Header */
 .navbar {background-color: #fff; margin-bottom: 1.5rem;}
-.navbar-brand {font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--dusk);}
+.navbar-brand {font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--dusk); margin-right: 3rem;}
 .navbar-collapse {justify-content: space-between;}
-.navbar-center {width: 40%;}
+.navbar-center {width: 60%;}
 .navbar-center,.navbar-right {margin-bottom: 0 !important;}
 .navbar form {height: 100%; width: 100%;}
 .navbar .input-field {margin: 0; height: 100%; position: relative;}
@@ -134,9 +134,12 @@ a.show{color: var(--clear-blue) !important;display: flex; justify-content: cente
 @media screen and (max-width:440px) {
     .profile ul {font-size: .875rem; margin-left: 0rem !important;}
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
     .navbar-center {width: 100%;}
     .navbar .navbar-right .dropdown-menu.notification {right: auto; left: 0;}
     .table-striped td {padding-right: .75rem !important;}
     .table-responsive {display: block !important;}
+}
+@media screen and (min-width:768px) {
+    .navbar-collapse {border-left: 2px solid var(--blue-grey);}
 }
