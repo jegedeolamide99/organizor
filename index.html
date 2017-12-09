@@ -15,48 +15,53 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand" role="navigation">
+        <nav class="navbar navbar-expand-md" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">organizor</a>
-                <div class="navbar navbar-center">
-                    <form>
-                        <div class="input-field">
-                            <input id="search" required="" type="search" placeholder="What are you looking for?">
-                            <label class="label-icon" for="search">
-                                <i class="icon-magnifier"></i>
-                            </label>
-                        </div>
-                    </form>
-                </div>
-                <div class="navbar navbar-right">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <i class="icon-bell"></i>
-                            <span class="badge"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a href="#">Olamide responded to your email</a></li>
-                            <li class="dropdown-item"><a href="#">Arinze scheduled an appointment</a></li>
-                        </ul>                    
-                    </div>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle profile" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <img class="img-fluid" src="images/olamide.jpg">
-                            <ul>
-                                <li>Alice Wonderberg</li>
-                                <li>Agency Administrator</li>
-                            </ul>
-                        </a>
-                        <ul class="dropdown-menu status">
-                            <p>Alice Wonderberg</p>
-                            <li class="dropdown-item">Role: <span>Agency Administrator</span></li>
-                            <li class="dropdown-item">Branch: <span>Skillset</span></li>
-                            <li class="dropdown-item"><a href="mailto:alicewonderberg@gmail.com">alicewonderberg@gmail.com</a></li>
-                            <div class="btn-group-lg" role="group" aria-label="Settings & Logout">
-                                <a class="btn btn-lg" href="#"><i class="icon-settings"></i> Settings</a>
-                                <a class="btn btn-lg" href="#"><i class="icon-logout"></i> Logout</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="icon-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mobile-nav">
+                    <div class="navbar navbar-center">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" required="" type="search" placeholder="What are you looking for?">
+                                <label class="label-icon" for="search">
+                                    <i class="icon-magnifier"></i>
+                                </label>
                             </div>
-                        </ul>
+                        </form>
+                    </div>
+                    <div class="navbar navbar-right">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                <i class="icon-bell"></i>
+                                <span class="badge"></span>
+                            </a>
+                            <ul class="dropdown-menu notification">
+                                <li class="dropdown-item"><a href="#">Olamide responded to your email</a></li>
+                                <li class="dropdown-item"><a href="#">Arinze scheduled an appointment</a></li>
+                            </ul>                    
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle profile" href="#" data-toggle="dropdown" aria-expanded="false">
+                                <img class="img-fluid" src="images/olamide.jpg">
+                                <ul>
+                                    <li>Alice Wonderberg</li>
+                                    <li>Agency Administrator</li>
+                                </ul>
+                            </a>
+                            <ul class="dropdown-menu status">
+                                <p>Alice Wonderberg</p>
+                                <li class="dropdown-item">Role: <span>Agency Administrator</span></li>
+                                <li class="dropdown-item">Branch: <span>Skillset</span></li>
+                                <li class="dropdown-item"><a href="mailto:alicewonderberg@gmail.com">alicewonderberg@gmail.com</a></li>
+                                <div class="btn-group-lg" role="group" aria-label="Settings & Logout">
+                                    <a class="btn btn-lg" href="#"><i class="icon-settings"></i> Settings</a>
+                                    <a class="btn btn-lg" href="#"><i class="icon-logout"></i> Logout</a>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,7 +228,10 @@
     </main>
     
     <!-- Scripts -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
