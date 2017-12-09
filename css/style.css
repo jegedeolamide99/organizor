@@ -92,6 +92,7 @@ nav .input-field label {
 .profile ul li {color: var(--blue-grey);}
 .profile img {border-radius: 50%;}
 /* Main */
+.icon-text {margin-left: 1rem; color: var(--blue-grey);}
 main .profile {padding: 1rem; display: flex; align-content: center;}
 .profile-img {height: 100px; width: 100px; position: relative;}
 .profile-img .badge {background-color: var(--lavender-blue); padding: .4em .5em !important;}
@@ -120,7 +121,7 @@ main .container-fluid {max-width: 95vw;}
 .row.box {padding:0rem;}
 .row.box .col-lg-12 {padding: 1rem 0rem;}
 .row.box .col-lg-12:hover {background-color: #7E8FF2;}
-.row.box .col-lg-12:hover i {color: #FFFFFF;}
+.row.box .col-lg-12:hover i,.row.box .col-lg-12:hover .icon-text {color: #FFFFFF;}
 i {color: var(--blue-grey); font-size: 1rem;}
 th{padding-left: 0rem !important;}
 td {line-height: 1.875rem; padding: 0rem !important; border: none !important;}
@@ -142,4 +143,7 @@ a.show{color: var(--clear-blue) !important;display: flex; justify-content: cente
 }
 @media screen and (min-width:768px) {
     .navbar-collapse {border-left: 2px solid var(--blue-grey);}
+}
+@media screen and (min-width:992px) {
+    .icon-text {display: none;}
 }
